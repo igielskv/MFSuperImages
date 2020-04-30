@@ -1,0 +1,6 @@
+framework module MFSuperImages {
+  umbrella header "MFSuperImages-umbrella.h"
+
+  export *
+  module * { export * }
+}

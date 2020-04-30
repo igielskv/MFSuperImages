@@ -1,0 +1,16 @@
+PODS:
+  - MFSuperImages (0.1.0)
+
+DEPENDENCIES:
+  - MFSuperImages (from `../`)
+
+EXTERNAL SOURCES:
+  MFSuperImages:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MFSuperImages: ec5a4ef253027bbfdff62fb6209fd3cb213d2fbd
+
+PODFILE CHECKSUM: 5db18db30ec74065db3be6e73d3c426d028a5148
+
+COCOAPODS: 1.9.1
