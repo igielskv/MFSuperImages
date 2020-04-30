@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MFSuperImages_Example' do
+  pod 'MFSuperImages', :path => '../'
+
+  target 'MFSuperImages_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
