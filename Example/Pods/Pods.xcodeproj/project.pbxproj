@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,8 +11,8 @@
 		47081996F74BFEAEF7E4B1CADBE120FF /* Pods-MFSuperImages_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F1E43AA1404C9FFF6E0C9E792377E9F /* Pods-MFSuperImages_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		49958463DE4E486716666E89214A56C4 /* Pods-MFSuperImages_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C3ED0BF2AF2AD14436CCC85D34A68F /* Pods-MFSuperImages_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74B790254E5524F03485EBF0F7CB40EB /* Pods-MFSuperImages_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A734ECE6B481CD3355B3E5C20FB91335 /* Pods-MFSuperImages_Example-dummy.m */; };
+		9F89DC2C245B7D8B0055DE6D /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89DC2B245B7D8B0055DE6D /* UIImageViewExtensions.swift */; };
 		A10FCA43E381B6EEAE6875BBB40BD7EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		B5D99A06543C4587D5FC108DC60536A1 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF85815FE526320064647826796925F /* ReplaceMe.swift */; };
 		BC4B1581E6E161FA43045AFE789B970F /* MFSuperImages-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 309A2A4C93FB889A4712B1B7E1E13726 /* MFSuperImages-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0008E9D0FF471FF529A0F5BC90B26C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		D7BC744DA55DC87712F3BC3F69C8C04F /* MFSuperImages-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E44F34CE3FF59CC2FEB91E22C8AE473 /* MFSuperImages-dummy.m */; };
@@ -58,11 +58,11 @@
 		89042A21F15D10160E50F2C2114E9A62 /* Pods-MFSuperImages_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MFSuperImages_Example.release.xcconfig"; sourceTree = "<group>"; };
 		924210C8327DB799BF6A9BEB8A0483F3 /* MFSuperImages.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MFSuperImages.modulemap; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F89DC2B245B7D8B0055DE6D /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIImageViewExtensions.swift; path = MFSuperImages/Classes/UIImageViewExtensions.swift; sourceTree = "<group>"; };
 		A0C3ED0BF2AF2AD14436CCC85D34A68F /* Pods-MFSuperImages_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MFSuperImages_Tests-umbrella.h"; sourceTree = "<group>"; };
 		A734ECE6B481CD3355B3E5C20FB91335 /* Pods-MFSuperImages_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MFSuperImages_Example-dummy.m"; sourceTree = "<group>"; };
 		A7E1BD2A4FF0908AF43346E93FB9259F /* Pods_MFSuperImages_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MFSuperImages_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE6ED5A4D494639E8CA7D6A54EFF4B64 /* Pods-MFSuperImages_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MFSuperImages_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		BEF85815FE526320064647826796925F /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = MFSuperImages/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		C4E0B65AAB346A42FDE1FA7206226C95 /* Pods_MFSuperImages_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MFSuperImages_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C96D90DD941065CB2A6D19386814C7E0 /* Pods-MFSuperImages_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MFSuperImages_Example.modulemap"; sourceTree = "<group>"; };
 		CD6AD7B76A3CA2419D45708F82C87389 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -163,9 +163,9 @@
 		599A01132281842206FD736AA0382A99 /* MFSuperImages */ = {
 			isa = PBXGroup;
 			children = (
-				BEF85815FE526320064647826796925F /* ReplaceMe.swift */,
 				3A695DB8C59B45199B067681D1E9FCFE /* Pod */,
 				1011CBB5B360DD1D3E190EAF88F22760 /* Support Files */,
+				9F89DC2B245B7D8B0055DE6D /* UIImageViewExtensions.swift */,
 			);
 			name = MFSuperImages;
 			path = ../..;
@@ -324,7 +324,7 @@
 				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -372,8 +372,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F89DC2C245B7D8B0055DE6D /* UIImageViewExtensions.swift in Sources */,
 				D7BC744DA55DC87712F3BC3F69C8C04F /* MFSuperImages-dummy.m in Sources */,
-				B5D99A06543C4587D5FC108DC60536A1 /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,8 +427,12 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-MFSuperImages_Tests/Pods-MFSuperImages_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MFSuperImages_Tests/Pods-MFSuperImages_Tests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -449,6 +453,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4ED4738E3B6743F76301C3BEA449C3B2 /* MFSuperImages.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -461,8 +466,12 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MFSuperImages/MFSuperImages-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MFSuperImages/MFSuperImages-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/MFSuperImages/MFSuperImages.modulemap";
 				PRODUCT_MODULE_NAME = MFSuperImages;
 				PRODUCT_NAME = MFSuperImages;
@@ -493,8 +502,12 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-MFSuperImages_Tests/Pods-MFSuperImages_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MFSuperImages_Tests/Pods-MFSuperImages_Tests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -558,12 +571,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -620,7 +634,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -649,8 +663,12 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-MFSuperImages_Example/Pods-MFSuperImages_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MFSuperImages_Example/Pods-MFSuperImages_Example.modulemap";
 				OTHER_LDFLAGS = "";
@@ -670,6 +688,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 53BBC1D679892DAC854088B6AD27D1E6 /* MFSuperImages.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -682,14 +701,19 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MFSuperImages/MFSuperImages-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MFSuperImages/MFSuperImages-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/MFSuperImages/MFSuperImages.modulemap";
 				PRODUCT_MODULE_NAME = MFSuperImages;
 				PRODUCT_NAME = MFSuperImages;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -713,8 +737,12 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-MFSuperImages_Example/Pods-MFSuperImages_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MFSuperImages_Example/Pods-MFSuperImages_Example.modulemap";
 				OTHER_LDFLAGS = "";

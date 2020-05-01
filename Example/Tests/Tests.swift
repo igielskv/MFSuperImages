@@ -18,6 +18,13 @@ class Tests: XCTestCase {
         XCTAssert(true, "Pass")
     }
     
+    func test_roundImage() {
+        let testView = UIImageView()
+        testView.roundViewWith(borderColor: .red, borderWidth: 3.0)
+        
+        XCTAssert(testView.layer.borderWidth == 3.0)
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure() {
